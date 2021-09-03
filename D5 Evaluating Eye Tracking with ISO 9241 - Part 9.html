@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>
+Evaluating Eye Tracking with ISO 9241 - Part 9
+</title>
+
+<body>
+<blockquote>
+
+<hr>
+<font size=-1>
+Zhang, X., and MacKenzie, I. S. (2007). 
+Evaluating eye tracking with ISO 9241 – Part 9.
+<I>Proceedings of HCI International 2007</I> (LNCS 4552), pp. 779-788. Heidelberg: 
+Springer.
+[<a href="http://www.yorku.ca/mack/FittsLawSoftware/">software</a>]
+
+</font>
+<hr>
+
+<center>
+<h1>
+Evaluating Eye Tracking with ISO 9241 - Part 9
+</h1>
+
+<h3>
+Xuan Zhang and <a href="index.html">I. Scott MacKenzie</a>
+</h3>
+
+ 
+Department of Computer Science and Engineering<br> 
+York University<br>
+Toronto, Ontario, Canada M3J 1P3<br> 
+{xuan, mack}@cse.yorku.ca
+</center>
+<p>
+
+<blockquote>
+<b>Abstract</b><br>
+The ISO 9241-9 standard for computer pointing devices proposes an evaluation of performance and comfort [4]. This paper is the first eye tracking evaluation conforming to ISO 9241-9. We evaluated three techniques and compared them with a standard mouse. The evaluation used throughput (in bits/s) as a measurement of user performance in a multi-directional point-select task. The "Eye Tracking Long" technique required participants to look at an on-screen target and dwell on it for 750 ms for selection. Results revealed a lower throughput than for the "Eye Tracking Short" technique with a 500 ms dwell time. The "Eye+Spacebar" technique allowed participants to "point" with the eye and "select" by pressing the spacebar upon fixation. This eliminated the need to wait for selection. It was the best among the three eye tracking techniques with a throughput of 3.78 bits/s, which was close to the 4.68 bits/s for the mouse.
+<p>
+
+<b>Keywords</b>: Pointing devices, ISO 9241, Fitts' law, performance evaluation, eye 
+movement, eye tracking.
+</blockquote>
+
+<h2>1 Introduction</h2>
+<p>
+
+Beginning with the Apple <I>Macintosh</I> in 1984, graphical user interfaces (GUIs) have 
+evolved and matured. The key feature of modern GUIs is the ability for users to 
+interact with simple point-and-select operations. The most common pointing device in 
+desktop systems is the mouse. To select an on-screen target with a mouse, a user 
+manipulates the mouse to maneuver the cursor to a target, then selects the target by 
+pressing and releasing a button. Simple as this seems, the interaction is even simpler 
+with an eye tracker. The user locates the target by looking at it and follows 
+immediately with selection [10].
+<p>
+
+Although considerable research exists in eye tracking [3, 6, 9, 10], none has evaluated 
+eye tracking with <I>ISO 9241 Ergonomic requirements for office work with visual 
+display terminals (VDTs) - Part 9: Requirements for non-keyboard input devices</I>. 
+ISO 9241-9 establishes uniform guidelines and testing procedures for evaluating 
+computer pointing devices. The metric for comparison is <I>Throughput</I>, in bits per 
+second (bits/s), which includes both the speed and accuracy of users' performance. 
+The equation for throughput is Fitts' Index of Performance except using an <I>effective</I> 
+index of difficulty (<I>ID</I><sub>e</sub>). Specifically,
+<p>
+
+<table width=90%>
+<tr>
+<td width=10%>
+<td width=80%>
+<i>Throughput</i> = <i>ID</i><sub>e</sub> / <I>MT</I>
+<td width=10% align=right>
+(1)
+</table>
+<p>
+
+where <I>MT</I> is the mean movement time, in seconds, for all trials within the same 
+condition, and
+<p>
+
+<table width=90%>
+<tr>
+<td width=10%>
+<td width=80%>
+<I>ID</I><sub>e</sub> = log<sub>2</sub>(<I>D</I> / <I>W</I><sub>e</sub> + 1).
+<td width=10% align=right>
+(2)
+</table>
+<p>
+
+<I>ID</I><sub>e</sub>, in bits, is calculated from <I>D</I>, the distance to the target, and 
+<I>W</I><sub>e</sub>, the effective width 
+of the target. <I>W</I><sub>e</sub> is calculated as
+<p>
+
+<table width=90%>
+<tr>
+<td width=10%>
+<td width=80%>
+<I>W</I><sub>e</sub> = 4.133 × <I>SD</I>.
+<td width=10% align=right>
+(3)
+</table>
+<p>
+
+where <I>SD</I> is the standard deviation in the selection coordinates measured along the 
+line from the center of the home square to the center of a target. Using effective width 
+allows throughput to incorporate the spatial variability in human performance. It 
+includes both speed and accuracy [5].
+<p>
+
+<h3>Prior Evaluations</h3>
+
+ISO 9241-9 was in Draft International Standard form in 1998 and became an 
+International Standard in 2000. If one considers mouse evaluations in research not 
+following the standard, throughput ranged from about 2.6 bits/s to 12.5 bits/s. On the 
+contrary, studies conforming to the standard reported throughput from about 3.7 bits/s 
+to 4.9 bits/s [8]. The data appear much more uniform and consistent. In short, 
+ISO 9241-9 improves the quality and comparability of device evaluations. 
+<p>
+
+Although several papers follow ISO 9241-9 and dozens of others use Fitts' law to 
+evaluate non-keyboard input devices, Ware and Mikaelian published in 1987 what 
+remains the only Fitts' law evaluation of an eye tracking system [10]. They used a 
+serial Fitts' law task to test three eye tracking techniques. Task completion time was 
+the only performance measure used. They compared eye tracking with the mouse but 
+did not calculate or report on throughput as a performance measure. No eye tracking 
+evaluation paper has ever been published since then using Fitts' law (or ISO 9241-9). 
+<p>
+
+By following the standard and comparing throughput for eye tracking with a baseline 
+technique (i.e., a mouse), we can determine how good an eye tracking system is. This 
+paper is the first eye tracking evaluation conforming to ISO 9241-9.
+<p>
+
+The rest of this paper is organized as follows. In section 2, we described the 
+methodology of our experiment. In section 3, the results are presented and discussed. Finally, we present our conclusions in section 4.<p>
+
+<h2>
+Methodology
+</h2>
+
+<p>
+
+</blockquote>
+</body>
+</html>
+
+ 
+ 
+ 
+ 

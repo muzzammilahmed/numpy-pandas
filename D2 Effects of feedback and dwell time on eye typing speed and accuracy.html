@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="Author" content="I. Scott MacKenzie">
+<title>
+Effects of feedback and dwell time on eye typing speed and accuracy
+</title>
+
+<style type="text/css">  
+   table { border-collapse:collapse; }
+  th {
+	padding-right:10px;
+	padding-left:10px;	
+	padding-top:3px;	
+	padding-bottom:3px;
+	background-color:#dddddd;	
+}
+  td {
+	padding-right:10px;
+	padding-left:10px;	
+	padding-top:3px;	
+	padding-bottom:3px;		
+}
+
+</style>
+</head>
+
+<body>
+<blockquote>
+
+<hr>
+<font size=-1>
+Majaranta, P., MacKenzie, I. S., Aula, A., & Räihä, K.-J. (2006). 
+Effects of feedback and dwell time on eye typing speed and accuracy.
+<I>Universal Access in the Information Society (UAIS)</I>, <I>5</I>, 199-208.
+</font>
+<hr>
+
+<center>
+<h1>
+Effects of Feedback and Dwell Time on Eye Typing Speed and Accuracy
+</h1>
+
+<h3>
+P. Majaranta<sup>1</sup>, 
+<a href="http://www.yorku.ca/mack/">I. S. MacKenzie</a><sup>2</sup>, 
+A. Aula<sup>1</sup>, & 
+K.-J. Räihä<sup>1</sup>
+</h3>
+
+<sup>1</sup>Unit for Human–Computer Interaction (TAUCHI)<br>
+Department of Computer Sciences, University of Tampere<br>
+Tampere 33014, Finland<br>
+E-mail: Paivi.Majaranta@cs.uta.fi</br>
+Tel.: +358-3-35518550
+<p>
+
+<sup>2</sup>Department of Computer Science and Engineering<br>
+York University, Toronto, ON, Canada M3J 1P3
+<p>
+</center>
+
+<blockquote>
+<b>Abstract</b><br>
+Eye typing provides a means of communication that is especially useful for people with disabilities. However, most related research addresses technical issues in eye typing systems, and largely ignores design issues. This paper reports experiments studying the impact of auditory and visual feedback on user performance and experience. Results show that feedback impacts typing speed, accuracy, gaze behavior, and subjective experience. Also, the feedback should be matched with the dwell time. Short dwell times require simplified feedback to support the typing rhythm, whereas long dwell times allow extra information on the eye typing process. Both short and long dwell times benefit from combined visual and auditory feedback. Six guidelines for designing feedback for gaze-based text entry are provided.
+<p>
+
+<b>Keywords:</b> Eye typing, text entry, feedback
+modalities, people with disabilities
+<p>
+</blockquote>
+
+<h2>1 Introduction</h2>
+<p>
+
+Eye typing refers to the production of text using the focus of the eye (aka gaze) as a means of input. It is especially needed by people with severe disabilities,
+where controlling the eyes is sometimes the only means of interaction with the world. Their need for an effective communication system is acute.
+<p>
+
+Research on technical aspects of eye typing extends
+over 20 years. However, there is little research on design
+issues [16]. The authors’ work [17, 18, 19] is an attempt
+to partly fill this gap. Such work investigated how feedback
+can facilitate the tedious [5] eye typing task. This
+paper summarizes the results of three experiments
+studying various aspects of feedback during eye typing.
+Because gaze has some unique features, the paper
+briefly introduces gaze as an input method. This is followed
+by a description of eye typing. Examples of the
+most relevant research on eye gaze feedback are reviewed.
+The methods and results of the experiments are
+then presented, followed by guidelines gleaned from the
+results.
+<p>
+
+<h3>1.1 Gaze input</h3>
+<p>
+
+Gaze is naturally used to obtain visual information. For
+example, gaze location shows the focus of attention [13].
+As an input method, gaze has both advantages and
+disadvantages. It is a natural mode of input as it is easy
+to focus on items by looking at them [12, 25]. Another
+advantage is that target acquisition using gaze is very
+fast, provided the targets are su.ciently large [26].
+However, gaze is not as accurate as the mouse.
+Inaccuracy originates partly from technological reasons
+and partly from features of the eye [12]. The size of the
+fovea and the inability of the remote camera to resolve
+the fovea position restricts the accuracy of the measured
+point of gaze to about 0.5 degrees, equivalent to a region
+spanning approximately 15 pixels on a typical display
+(17 inch display with a resolution of 1,024 &times; 768 pixels
+viewed from a distance of 70&nbsp;cm). One problem is
+drifting; even if a newly calibrated eye tracking device is
+accurate at first, with continued use the measured point
+of gaze drifts away from the actual point of gaze. This is
+partly due to the technology and partly due to the
+interaction between head movement and eye movement.
+Therefore, the practical accuracy with about 0.5–1 degree of
+drifting corresponds to about 1–1.5 cm on the screen at
+a normal viewing distance.
+<p>
+
+When we look at things, we fixate (focus) on them,
+with fixations typically lasting from 200 to 600 ms [12].
+For a computer to distinguish whether the user is
+looking at an object to obtain information or to select it,
+an interval longer than the typical fixation interval is
+needed. Stampe and Reingold [25] used a dwell time (an
+extended look at the object) of 750&nbsp;ms in their eye typing
+study. A thousand milliseconds is usually long enough to
+prevent false selections. For simple tasks, 700&nbsp;ms or less
+is enough. Requiring the user to fixate for long intervals
+is good for preventing false selections (thus, preventing
+the so-called Midas touch problem [11]), but this is
+uncomfortable for most users [25].
+<p>
+
+It is important to note that the use of a dwell time
+criterion for key selection places an upper limit on eye
+typing speed. In other words, no amount of skill
+acquisition will allow a user to "eye press keys" at a rate
+faster than 1&nbsp;/&nbsp;<I>t</I><sub>d</sub>, where td is the dwell time. If, for
+example, <I>t</I><sub>d</sub> = 1,000&nbsp;ms = 1&nbsp;s, the upper limit for typing
+speed is (60&nbsp;/&nbsp;1)&nbsp;/&nbsp;5 = 12 words per minute (wpm)
+(following the accepted method in computing typing
+speed of 1 word = 5 inputted characters).
+<p>
+
+<h3>1.2 Typing by gaze</h3>
+<p>
+
+A typical setup has an eye tracker and an on-screen
+keyboard (see Fig.&nbsp;1). The tracking device follows the
+user’s point of gaze and software records and analyses
+the gaze behavior. Based on the analysis, the system
+decides which letter the user wants to type.
+During eye typing, the user first locates the letter by
+moving his or her gaze (focus) to it. When using dwell
+time for selection, the user continues to look at the letter
+for a pre-defined time interval. Feedback is typically shown on both focus and selection (for a review, see [16]).<p>
+
+<h2>
+Previous research
+</h2>
+<p>
+</table>
+</body>
+</html>
